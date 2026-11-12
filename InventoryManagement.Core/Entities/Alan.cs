@@ -12,6 +12,12 @@ public class Alan
 
     [Required]
     public string AlanAdi { get; set; } = string.Empty;
+
+
+    //Navigation
+    public Sayim Sayim { get; set; } = null!;
+    public ICollection<Lokasyon> Lokasyonlar { get; set; } = new List<Lokasyon>(); 
+
     
 
 }

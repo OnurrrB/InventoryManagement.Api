@@ -32,6 +32,10 @@ public class Katalog
     public DateTime GuncellemeTarihi { get; set; } = DateTime.Now;
 
 
+    //Navigation
+    public Firma Firma { get; set; } =null!;
+
+
 
 
 } 

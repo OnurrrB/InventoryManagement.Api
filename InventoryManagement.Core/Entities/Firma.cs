@@ -22,6 +22,10 @@ public class Firma
     
     public DateTime OlusturmaTarihi { get; set; } = DateTime.Now;
 
+    //Navigation
+    public ICollection<Sayim> Sayimlar { get; set; } =  new List<Sayim>();
+    public ICollection<Katalog> Kataloglar { get; set; } = new List<Katalog>();
+
     
 
 }

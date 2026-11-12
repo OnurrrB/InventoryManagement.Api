@@ -3,7 +3,7 @@ public class Okutma
 {
     public int Id { get; set; }
 
-    public int SayimId { get ; set; }
+    
     public int LokasyonId { get ; set; }
     
     public int PersonelId { get ; set; }
@@ -22,6 +22,13 @@ public class Okutma
     public string? ÜrünAdi { get ; set; } 
 
     public string? Marka { get ; set; }
+
+
+    //Navigation 
+    public Lokasyon Lokasyon { get; set; }= null!;
+    public Personel Personel { get; set; }= null!;
+
+
 
 
     

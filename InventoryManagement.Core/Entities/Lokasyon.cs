@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
+
 public class Lokasyon
 {
     public int Id { get; set; }
@@ -18,5 +19,16 @@ public class Lokasyon
     public int? KafaSayimiAdet { get; set; }
     public DateTime? SayimZamani { get; set; }
     public int? PersonelId { get; set; }
+
+
+    //Navigation 
+    public Alan Alan { get; set; }= null!;
+    public Personel? Personel { get; set; }
+    
+    public ICollection<Okutma> Okutmalar { get; set; } = new List<Okutma>();
+
+
+
+
 
 }
